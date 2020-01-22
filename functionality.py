@@ -21,3 +21,19 @@ def open_write_to_file(name, mode, data, indent=False):
 
         with open(name, mode) as f:
             f.write(f"{data}")
+
+
+def count_lines_and_simbols(name):
+
+    list_line_len = []
+
+    try:
+        with open(name) as f:
+
+            for line in f:
+
+                list_line_len.append(len(line))
+
+    except IOError:
+        print("Some error")
+    return list_line_len
