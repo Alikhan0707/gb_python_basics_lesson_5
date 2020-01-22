@@ -37,3 +37,28 @@ def count_lines_and_simbols(name):
     except IOError:
         print("Some error")
     return list_line_len
+
+
+def workers_data(name):
+
+    """
+
+    :param name: file name
+    :return: workers dictionary
+    """
+
+    workers_dict = {}
+
+    try:
+
+        with open(name) as f:
+
+            for line in f:
+
+                split_line = line.split(":")
+                workers_dict[split_line[0]] = split_line[1]
+
+    except IOError:
+        print("Some error")
+
+    return workers_dict
