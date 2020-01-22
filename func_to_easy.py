@@ -74,7 +74,7 @@ def split_string(string: str):
     for i in range(len(new_list)):
         for s in symbols_list:
             if s in new_list[i]:
-                new_list[i] = new_list[i].split(s)
+                new_list[i] = new_list[i].strip(s).split(s)
 
     for i in new_list:
 
