@@ -16,7 +16,7 @@ for i in data:
 
     splitted = split_string(i)
 
-    profit = sum_number_in_list(splitted)
+    profit = int(splitted[2]) - int(splitted[3])
 
     firm_dict[splitted[0]] = profit
 
@@ -26,4 +26,6 @@ for i in data:
 
 firm_list.append(firm_dict)
 firm_list.append(average)
+
+write_data_to_file(json_file, firm_list, to_json=True)
 
