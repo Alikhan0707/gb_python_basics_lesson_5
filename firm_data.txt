@@ -1,0 +1,5 @@
+story_last 30000 2303
+gone_away 34834 43222
+good_doog 56443 2234
+you_n_you 432234 4343
+yes_yes 333244 43444
